@@ -4,36 +4,45 @@
 
 /*-------МИКСИНЫ-------------*/
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
 @font-face {
-  font-family: "BebasNeue-Regular";
+  font-family: "Pehlevi";
   font-display: swap;
-  src: url("../fonts/BebasNeue-Regular.woff") format("woff"), url("../fonts/BebasNeue-Regular.woff2") format("woff2");
+  src: url("../fonts/Pehlevi-Regular.woff") format("woff"), url("../fonts/Pehlevi-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
+.f-OpenSans {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
 }
 
-@font-face {
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+.f-Roboto {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
 }
 
-@font-face {
-  font-family: "SF-UI-Display-Regular";
-  font-display: swap;
-  src: url("../fonts/SF-UI-Display-Regular.woff") format("woff"), url("../fonts/SF-UI-Display-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+.f-Manrope {
+  font-size: 40px;
+  font-family: "Manrope", sans-serif;
+}
+
+.f-Josefin {
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.f-Pehlevi {
+  font-size: 40px;
+  font-family: "Pehlevi", sans-serif;
 }
 
 /*Обнуление*/

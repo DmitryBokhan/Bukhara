@@ -1,19 +1,24 @@
 # Bukhara
 Ресторан Бухара
 
+Начало верстки 05.04.2021
+
+Конец верстки -
+
+------------------
 Шрифты проекта:
 
-Pehlevi Regular
+Pehlevi Regular  - скачал ttf в проект
 
-Open Sans Bold
+Open Sans Bold - импорт с GoogleFont
 
-Arial Bold
+Arial Bold - стандарт
 
-Roboto Regular
+Roboto Regular - импорт с GoogleFont
 
-Manrope Regular
+Manrope Regular - импорт с GoogleFont
 
-Josefin Sans Regular
+Josefin Sans Regular - импорт с GoogleFont
 
-
+-------------------
 
