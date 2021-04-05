@@ -1,0 +1,19 @@
+.btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 0px 20px;
+   height: 47px;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 29 / 20 * 100%; //вычисляем высоту строки в зависимости от величины шрифта
+   @media (min-width: 992px) {
+      &:hover {
+         background-color: #d15050;
+      }
+   }
+   &._fw {
+      width: 100%;
+   }
+}
