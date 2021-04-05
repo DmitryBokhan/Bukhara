@@ -1,8 +1,18 @@
 .header {
+   position: relative;
+   z-index: 100;
    &__content {
+      max-width: 1100px;
+      padding: 0px 10px;
+      margin: 0 auto;
    }
 
    &__menu {
+      display: flex;
+      justify-content: center;
+      height: 82px;
+      align-items: center;
+      padding: 10px 0;
    }
 }
 
@@ -11,12 +21,52 @@
    }
 
    &__body {
+      display: flex;
+      align-items: center;
+   }
+   &__logo {
+      margin-right: 30px;
    }
 
    &__list {
+      display: flex;
    }
 
    &__link {
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: rgb(255, 255, 255);
+      padding: 0px 2.5px;
+      margin: 0px 12.5px;
+   }
+   &__link:hover {
+      color: #f0c640;
+      position: relative;
+   }
+   &__link:hover::before {
+      content: "";
+      background: #f0c640;
+      transform: rotate(-45deg);
+      position: absolute;
+      width: 5.99px;
+      height: 5.99px;
+      left: -10px;
+      top: 6px;
+   }
+   &__btn {
+      margin: 0px 60px 0px 0px;
+   }
+
+   &__cart {
+      margin: 0px 15px;
+   }
+   &__userlog {
+      margin: 0px 15px;
+   }
+   &__bar {
+      margin: 0px 0px 0px 15px;
    }
 }
 

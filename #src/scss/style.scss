@@ -39,7 +39,7 @@ $md4: 479.98;
 @import "null";
 body {
 	color: #000;
-	font-size: 14px;
+	font-size: 10px;
 	font-family: $fontFamily;
 	&._lock {
 		overflow: hidden;
@@ -79,4 +79,13 @@ body {
 //<ПОДКЛЮЧАЕМ ОБЩИЕ СТИЛИ (ФОРМЫ, КНОПКИ, ТИПОГРАФИЮ>=========
 @import "ui";
 @import "forms";
+@import "header";
 //<ПОДКЛЮЧАЕМ ОБЩИЕ СТИЛИ (ФОРМЫ, КНОПКИ, ТИПОГРАФИЮ>=========
+
+.bg {
+	background-image: url(../img/main_page/top_bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
