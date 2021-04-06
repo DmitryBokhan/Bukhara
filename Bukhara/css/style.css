@@ -4,16 +4,32 @@
 
 /*-------МИКСИНЫ-------------*/
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;
-
-700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
 @font-face {
   font-family: "Pehlevi";
   font-display: swap;
   src: url("../fonts/Pehlevi-Regular.woff") format("woff"), url("../fonts/Pehlevi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -222,6 +238,7 @@ body._lock {
 }
 
 .header__content {
+  margin-top: 30px;
   width: 100%;
   display: flex;
   position: fixed;
@@ -257,7 +274,7 @@ body._lock {
   line-height: 16px;
   color: white;
   padding: 0px 2.5px;
-  margin: 0px 12.5px;
+  margin: 0px 16.5px;
 }
 
 .menu__link:hover {
@@ -289,7 +306,7 @@ body._lock {
 }
 
 .menu__bar {
-  margin: 0px 0px 0px 15px;
+  margin: 0px 7px 0px 15px;
 }
 
 .icon-menu {

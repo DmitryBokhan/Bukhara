@@ -3,8 +3,8 @@
    justify-content: center;
    margin: 0 auto;
    &__content {
+      margin-top: 30px;
       width: 100%;
-      // max-width: $maxWidthContainer;
       display: flex;
       position: fixed;
       justify-content: space-between;
@@ -38,7 +38,7 @@
       line-height: 16px;
       color: rgb(255, 255, 255);
       padding: 0px 2.5px;
-      margin: 0px 12.5px;
+      margin: 0px 16.5px;
    }
    &__link:hover {
       color: #f0c640;
@@ -65,7 +65,7 @@
       margin: 0px 15px;
    }
    &__bar {
-      margin: 0px 0px 0px 15px;
+      margin: 0px 7px 0px 15px;
    }
 }
 

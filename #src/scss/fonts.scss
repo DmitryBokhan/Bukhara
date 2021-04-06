@@ -1,6 +1,7 @@
 @include font("Pehlevi", "Pehlevi-Regular", "400", "normal");
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@include font("Open Sans", "OpenSans-Bold", "700", "normal");
+@include font("Open Sans", "OpenSans-Regular", "400", "normal");
 // font-family: 'Open Sans', sans-serif;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
