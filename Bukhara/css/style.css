@@ -190,6 +190,11 @@ body._lock {
   color: #616161;
   text-transform: uppercase;
   padding: 6px 14px;
+  transition: background-color 0.3s ease 0s;
+}
+
+.button:hover {
+  background-color: #f0c640;
 }
 
 .button_xl {
@@ -199,6 +204,11 @@ body._lock {
   color: #616161;
   text-transform: uppercase;
   padding: 20px 45px;
+  transition: background-color 0.3s ease 0s;
+}
+
+.button_xl:hover {
+  background-color: #f0c640;
 }
 
 ._ibg {
@@ -275,6 +285,7 @@ body._lock {
   color: white;
   padding: 0px 2.5px;
   margin: 0px 16.5px;
+  transition: color 0.3s ease 0s;
 }
 
 .menu__link:hover {
@@ -299,6 +310,7 @@ body._lock {
 
 .menu__cart {
   margin: 0px 15px;
+  fill: red;
 }
 
 .menu__userlog {
@@ -307,6 +319,71 @@ body._lock {
 
 .menu__bar {
   margin: 0px 7px 0px 15px;
+}
+
+.header_fixed {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background: #0f1d22;
+  -webkit-animation-name: show_header;
+          animation-name: show_header;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes show_header {
+  0% {
+    background: #0f1d2200;
+  }
+
+  100% {
+    background: #0f1d22;
+  }
+}
+
+@keyframes show_header {
+  0% {
+    background: #0f1d2200;
+  }
+
+  100% {
+    background: #0f1d22;
+  }
+}
+
+.header_fixed_hidden {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: show_hidden;
+          animation-name: show_hidden;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes show_hidden {
+  0% {
+    background: #0f1d22;
+  }
+
+  100% {
+    background: #0f1d2200;
+  }
+}
+
+@keyframes show_hidden {
+  0% {
+    background: #0f1d22;
+  }
+
+  100% {
+    background: #0f1d2200;
+  }
 }
 
 .icon-menu {

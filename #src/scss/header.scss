@@ -39,27 +39,30 @@
       color: rgb(255, 255, 255);
       padding: 0px 2.5px;
       margin: 0px 16.5px;
+      transition: color 0.3s ease 0s;
+      &:hover {
+         color: #f0c640;
+         position: relative;
+      }
+      &:hover::before {
+         content: "";
+         background: #f0c640;
+         transform: rotate(-45deg);
+         position: absolute;
+         width: 5.99px;
+         height: 5.99px;
+         left: -10px;
+         top: 6px;
+      }
    }
-   &__link:hover {
-      color: #f0c640;
-      position: relative;
-   }
-   &__link:hover::before {
-      content: "";
-      background: #f0c640;
-      transform: rotate(-45deg);
-      position: absolute;
-      width: 5.99px;
-      height: 5.99px;
-      left: -10px;
-      top: 6px;
-   }
+
    &__btn {
       margin-right: 60px;
    }
 
    &__cart {
       margin: 0px 15px;
+      fill: red;
    }
    &__userlog {
       margin: 0px 15px;
@@ -68,6 +71,48 @@
       margin: 0px 7px 0px 15px;
    }
 }
+
+//<ПОДЛОЖКА ГЛАВНОГО МЕНЮ ПРИ СКРОЛЛЕ>==================
+.header_fixed {
+   position: fixed;
+   width: 100%;
+   height: 80px;
+   top: 0;
+   left: 0;
+   background: #0f1d22;
+   animation-name: show_header;
+   animation-duration: 0.5s;
+}
+
+@keyframes show_header {
+   0% {
+      background: #0f1d2200;
+   }
+   100% {
+      background: #0f1d22;
+   }
+}
+
+.header_fixed_hidden {
+   position: fixed;
+   width: 100%;
+   height: 80px;
+   top: 0;
+   left: 0;
+   animation-name: show_hidden;
+   animation-duration: 0.5s;
+}
+
+@keyframes show_hidden {
+   0% {
+      background: #0f1d22;
+   }
+   100% {
+      background: #0f1d2200;
+   }
+}
+
+//</ПОДЛОЖКА ГЛАВНОГО МЕНЮ ПРИ СКРОЛЛЕ>==================
 
 //<БУРГЕР> ================
 .icon-menu {
