@@ -1,6 +1,12 @@
 .title {
+   font-family: "Pehlevi";
+   font-size: 70px;
+   color: #fff;
 }
 .text {
+   font-family: Open Sans;
+   font-size: 18px;
+   color: #ffffff;
 }
 .button {
    font-family: Open Sans;
@@ -9,6 +15,14 @@
    color: #616161;
    text-transform: uppercase;
    padding: 6px 14px;
+}
+.button_xl {
+   font-family: Open Sans;
+   font-size: 12px;
+   background-color: #e9e8e8;
+   color: #616161;
+   text-transform: uppercase;
+   padding: 20px 45px;
 }
 
 //=====класс делает картинки адаптивными=====

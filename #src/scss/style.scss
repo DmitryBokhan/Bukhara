@@ -28,7 +28,7 @@ $fontFamily: "";
 //<ПЕРЕМЕННЫЕ>======================
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1110; //1750
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
@@ -63,6 +63,7 @@ body {
 ._container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
+
 	@media (max-width: $md1+px) {
 		max-width: 970px;
 	}
@@ -80,12 +81,5 @@ body {
 @import "ui";
 @import "forms";
 @import "header";
+@import "home"; //сили главной страницы
 //<ПОДКЛЮЧАЕМ ОБЩИЕ СТИЛИ (ФОРМЫ, КНОПКИ, ТИПОГРАФИЮ>=========
-
-.bg {
-	background-image: url(../img/main_page/top_bg.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}

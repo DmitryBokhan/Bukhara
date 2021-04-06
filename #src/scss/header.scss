@@ -1,37 +1,36 @@
 .header {
-   position: relative;
-   z-index: 100;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
    &__content {
-      max-width: 1100px;
-      padding: 0px 10px;
-      margin: 0 auto;
-   }
-
-   &__menu {
+      width: 100%;
+      // max-width: $maxWidthContainer;
       display: flex;
-      justify-content: center;
-      height: 82px;
-      align-items: center;
-      padding: 10px 0;
+      position: fixed;
+      justify-content: space-between;
+      flex: 1 1 auto;
    }
 }
-
+.logo {
+   display: flex;
+}
 .menu {
-   &__icon {
-   }
-
+   display: flex;
+   justify-content: center;
+   align-items: center;
    &__body {
       display: flex;
+      justify-content: center;
       align-items: center;
-   }
-   &__logo {
-      margin-right: 30px;
    }
 
    &__list {
       display: flex;
+      justify-content: center;
+      @media (max-width: $md1+px) {
+         display: none;
+      }
    }
-
    &__link {
       font-family: Open Sans;
       font-weight: 400;
@@ -56,7 +55,7 @@
       top: 6px;
    }
    &__btn {
-      margin: 0px 60px 0px 0px;
+      margin-right: 60px;
    }
 
    &__cart {
