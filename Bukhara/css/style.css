@@ -242,6 +242,7 @@ body._lock {
 }
 
 .header {
+  z-index: 201;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -322,6 +323,7 @@ body._lock {
 }
 
 .header_fixed {
+  z-index: 0;
   position: fixed;
   width: 100%;
   height: 80px;
@@ -437,7 +439,6 @@ body._lock {
 }
 
 .footer__menu {
-  background: rgba(196, 167, 167, 0.205);
   width: 33.333%;
 }
 
@@ -446,7 +447,7 @@ body._lock {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 80px 0px 0px 60px;
+  margin: 80px 0px 0px 20px;
 }
 
 .footer__menu-list li {
@@ -458,7 +459,6 @@ body._lock {
 }
 
 .footer__info {
-  background: rgba(150, 130, 130, 0.205);
   width: 33.333%;
 }
 
@@ -467,16 +467,18 @@ body._lock {
 }
 
 .footer__instagram {
-  background: rgba(207, 207, 207, 0.205);
+  display: flex;
+  justify-content: flex-end;
   width: 33.333%;
 }
 
 .footer__instagram-content {
-  margin: 80px 0px 0px 60px;
+  margin: 80px 0px 0px 18px;
 }
 
 .footer__label {
   color: #e9e8e8;
+  margin-left: 2.5px;
 }
 
 .footer__copyright {
@@ -484,7 +486,6 @@ body._lock {
   justify-content: center;
   align-items: center;
   min-height: 60px;
-  background: rgba(142, 190, 170, 0.205);
 }
 
 .footer__copyright-text {
@@ -520,6 +521,36 @@ body._lock {
   font-size: 15px;
   line-height: 1.8;
   color: #e9e8e8;
+}
+
+.instagram {
+  margin-top: 28px;
+}
+
+.instagram__box {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.instagram__box-row {
+  display: flex;
+  margin: 4px 0px;
+  position: relative;
+}
+
+.instagram__photo {
+  margin-right: 18px;
+}
+
+.instagram__box:first-child div:nth-child(1) a:first-child::after {
+  content: "INSTAGRAM";
+  position: absolute;
+  font-size: 13px;
+  font-family: Open Sans;
+  color: #e9e8e8;
+  top: -30px;
+  left: 0;
 }
 
 @media (min-width: 992px) {
@@ -594,6 +625,29 @@ body._lock {
     bottom: calc(50% + 1px);
   }
 }
+
+@media (max-width: 576px) {
+  .footer__top {
+    flex-wrap: wrap;
+  }
+
+  .footer__menu {
+    width: 50%;
+  }
+
+  .footer__info {
+    width: 50%;
+  }
+
+  .footer__instagram {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer__instagram-content {
+    margin: 80px 0px 50px 18px;
+  }
+}
 @supports (-webkit-appearance:none){
 .open-menu__welcome{background-image:url(../img/main_page/top_bg.webp)}
 }
@@ -623,6 +677,14 @@ body._lock {
 }
 
  @media (max-width: 767.98px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 576px){
 
 @supports (-webkit-appearance:none){
 
