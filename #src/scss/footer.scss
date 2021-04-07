@@ -21,22 +21,40 @@
    }
 
    &__menu-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 80px 0px 0px 60px;
    }
 
    &__menu-list {
+      & li {
+         margin-bottom: 30px;
+      }
+      & li:last-child {
+         margin-bottom: 20px;
+      }
    }
 
    &__info {
       background: rgba(150, 130, 130, 0.205); //удалить
       width: 33.333%;
    }
+   &__info-content {
+      margin: 80px 0px 0px 60px;
+   }
 
    &__instagram {
       background: rgba(207, 207, 207, 0.205); //удалить
       width: 33.333%;
    }
+   &__instagram-content {
+      margin: 80px 0px 0px 60px;
+   }
 
    &__label {
+      color: #e9e8e8;
    }
 
    &__copyright {
@@ -50,7 +68,7 @@
    &__copyright-text {
       font-family: Open Sans;
       font-size: 12px;
-      color: #fff;
+      color: #e9e8e8;
       & span {
          font-size: 13px;
       }
@@ -59,12 +77,28 @@
 
 .info {
    &__description {
+      margin-top: 5px;
+      font-family: Open Sans;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #e9e8e8;
+      max-width: 250px;
    }
 
    &__phone {
+      margin-top: 15px;
+      font-family: Open Sans;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #e9e8e8;
    }
 
    &__addres {
+      margin-top: 15px;
+      font-family: Open Sans;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #e9e8e8;
    }
 }
 .instagram {
