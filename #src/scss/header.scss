@@ -4,11 +4,14 @@
    margin: 0 auto;
    &__content {
       margin-top: 30px;
+      padding: 0px 15px 0px 15px;
       width: 100%;
       display: flex;
       position: fixed;
       justify-content: space-between;
       flex: 1 1 auto;
+      @media (min-width: px) {
+      }
    }
 }
 .logo {
@@ -57,12 +60,11 @@
    }
 
    &__btn {
-      margin-right: 60px;
+      margin-right: 50px;
    }
 
    &__cart {
       margin: 0px 15px;
-      fill: red;
    }
    &__userlog {
       margin: 0px 15px;

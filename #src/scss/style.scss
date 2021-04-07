@@ -65,10 +65,12 @@ body {
 	margin: 0 auto;
 
 	@media (max-width: $md1+px) {
-		max-width: 970px;
+		max-width: none;
+		// max-width: 970px;
 	}
 	@media (max-width: $md2+px) {
-		max-width: 750px;
+		max-width: none;
+		// max-width: 750px;
 	}
 	@media (max-width: $md3+px) {
 		max-width: none;
@@ -82,4 +84,5 @@ body {
 @import "forms";
 @import "header";
 @import "home"; //сили главной страницы
+@import "footer";
 //<ПОДКЛЮЧАЕМ ОБЩИЕ СТИЛИ (ФОРМЫ, КНОПКИ, ТИПОГРАФИЮ>=========

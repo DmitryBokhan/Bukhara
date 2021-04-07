@@ -14,4 +14,9 @@ window.onscroll = function showHeader() {
       menu.classList.add('header_fixed_hidden');
 
    }
+
+   // if (document.body.clientWidth <= 1122 && window.pageYOffset > 0) {
+   //    menu.classList.remove('header_fixed');
+   //    menu.classList.add('header_fixed_hidden');
+   // }
 }

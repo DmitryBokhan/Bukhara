@@ -5,11 +5,11 @@
       align-items: center;
       flex-direction: column;
       overflow: hidden;
-      max-width: 1920px;
+      max-width: 100%; //1920px
       background-image: url(../img/main_page/top_bg.jpg);
       background-position: center top;
       background-repeat: no-repeat;
-      // background-attachment: fixed;
+      background-attachment: fixed;
       background-size: cover;
    }
    &__title {

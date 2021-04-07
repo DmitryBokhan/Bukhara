@@ -179,7 +179,7 @@ body._lock {
 
 .text {
   font-family: Open Sans;
-  font-size: 18px;
+  font-size: 13px;
   color: #ffffff;
 }
 
@@ -249,6 +249,7 @@ body._lock {
 
 .header__content {
   margin-top: 30px;
+  padding: 0px 15px 0px 15px;
   width: 100%;
   display: flex;
   position: fixed;
@@ -305,12 +306,11 @@ body._lock {
 }
 
 .menu__btn {
-  margin-right: 60px;
+  margin-right: 50px;
 }
 
 .menu__cart {
   margin: 0px 15px;
-  fill: red;
 }
 
 .menu__userlog {
@@ -396,10 +396,11 @@ body._lock {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  max-width: 1920px;
+  max-width: 100%;
   background-image: url(../img/main_page/top_bg.jpg);
   background-position: center top;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -416,6 +417,36 @@ body._lock {
   margin: 30px 0px 285px 0px;
 }
 
+.footer {
+  background: #0f1d22;
+  min-height: 498px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.footer__menu {
+  background: rgba(196, 167, 167, 0.205);
+  width: 33.333%;
+}
+
+.footer__info {
+  background: rgba(150, 130, 130, 0.205);
+  width: 33.333%;
+}
+
+.footer__instagram {
+  background: rgba(207, 207, 207, 0.205);
+  width: 33.333%;
+}
+
+.footer__copyright {
+  background: rgba(142, 190, 170, 0.205);
+}
+
 @media (min-width: 992px) {
   .btn:hover {
     background-color: #d15050;
@@ -424,7 +455,7 @@ body._lock {
 
 @media (max-width: 1122px) {
   ._container {
-    max-width: 970px;
+    max-width: none;
   }
 
   .menu__list {
@@ -434,7 +465,7 @@ body._lock {
 
 @media (max-width: 991.98px) {
   ._container {
-    max-width: 750px;
+    max-width: none;
   }
 }
 
