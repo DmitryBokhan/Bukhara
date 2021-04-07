@@ -1,7 +1,12 @@
 .footer {
    background: #0f1d22;
-   min-height: 498px;
+   min-height: 500px;
    &__row {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      flex-grow: 1;
+      min-height: 500px;
    }
 
    &__top {
@@ -35,10 +40,20 @@
    }
 
    &__copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60px;
       background: rgba(142, 190, 170, 0.205); //удалить
    }
 
    &__copyright-text {
+      font-family: Open Sans;
+      font-size: 12px;
+      color: #fff;
+      & span {
+         font-size: 13px;
+      }
    }
 }
 
