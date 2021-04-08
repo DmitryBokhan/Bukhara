@@ -4,7 +4,7 @@
    justify-content: center;
    margin: 0 auto;
    &__content {
-      margin-top: 30px;
+      margin-top: 15px;
       padding: 0px 15px 0px 15px;
       width: 100%;
       display: flex;
@@ -80,12 +80,24 @@
    z-index: 0;
    position: fixed;
    width: 100%;
-   height: 80px;
+   height: 93px;
    top: 0;
    left: 0;
    background: #0f1d22;
    animation-name: show_header;
    animation-duration: 0.5s;
+   &::after {
+      content: "";
+      width: 100%;
+      height: 111px;
+      position: absolute;
+      top: 63px;
+      left: 0;
+      background: URL("../img/g-19_3_min.png") repeat-x center top;
+      background-size: 111px 57px;
+      animation-name: show_frezka;
+      animation-duration: 1.5s;
+   }
 }
 
 @keyframes show_header {
@@ -96,15 +108,44 @@
       background: #0f1d22;
    }
 }
+@keyframes show_frezka {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
 
 .header_fixed_hidden {
    position: fixed;
    width: 100%;
-   height: 80px;
+   height: 93px;
    top: 0;
    left: 0;
    animation-name: show_hidden;
    animation-duration: 0.5s;
+   &::after {
+      content: "";
+      width: 100%;
+      height: 111px;
+      position: absolute;
+      top: 63px;
+      left: 0;
+      background: URL("../img/g-19_3_min.png") repeat-x center top;
+      background-size: 111px 57px;
+      animation-name: show_frezka_hidden;
+      animation-duration: 0.5s;
+      opacity: 0;
+   }
+}
+@keyframes show_frezka_hidden {
+   0% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
 }
 
 @keyframes show_hidden {

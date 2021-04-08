@@ -27,3 +27,58 @@
       margin: 30px 0px 285px 0px;
    }
 }
+
+//*********<ABOUT>************
+.about {
+   margin: 120px 0px 215px 0px;
+   &__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+   }
+
+   &__title {
+      color: #0f1d22;
+   }
+
+   &__text {
+      color: #616161;
+      font-size: 17px;
+      padding: 0px 245px;
+      padding: 20px 245px 50px 245px;
+      text-align: center;
+      line-height: 1.8;
+   }
+
+   &__photo-carousel {
+      width: 982px;
+      height: 360px;
+      background: rgb(206, 206, 206);
+   }
+
+   &__chef {
+      display: flex;
+      margin-top: 70px;
+   }
+
+   &__chef-foto {
+   }
+   &__chef-discription {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding-left: 30px;
+   }
+   &__chef-text {
+      color: #616161;
+      font-size: 13px;
+      margin-left: 10px;
+   }
+
+   &__chef-signature {
+   }
+}
+//*********</ABOUT>************

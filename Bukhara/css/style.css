@@ -249,7 +249,7 @@ body._lock {
 }
 
 .header__content {
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 0px 15px 0px 15px;
   width: 100%;
   display: flex;
@@ -326,7 +326,7 @@ body._lock {
   z-index: 0;
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 93px;
   top: 0;
   left: 0;
   background: #0f1d22;
@@ -334,6 +334,21 @@ body._lock {
           animation-name: show_header;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+}
+
+.header_fixed::after {
+  content: "";
+  width: 100%;
+  height: 111px;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  background: URL("../img/g-19_3_min.png") repeat-x center top;
+  background-size: 111px 57px;
+  -webkit-animation-name: show_frezka;
+          animation-name: show_frezka;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 @-webkit-keyframes show_header {
@@ -356,16 +371,72 @@ body._lock {
   }
 }
 
+@-webkit-keyframes show_frezka {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show_frezka {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .header_fixed_hidden {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 93px;
   top: 0;
   left: 0;
   -webkit-animation-name: show_hidden;
           animation-name: show_hidden;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+}
+
+.header_fixed_hidden::after {
+  content: "";
+  width: 100%;
+  height: 111px;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  background: URL("../img/g-19_3_min.png") repeat-x center top;
+  background-size: 111px 57px;
+  -webkit-animation-name: show_frezka_hidden;
+          animation-name: show_frezka_hidden;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  opacity: 0;
+}
+
+@-webkit-keyframes show_frezka_hidden {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show_frezka_hidden {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes show_hidden {
@@ -418,9 +489,71 @@ body._lock {
   margin: 30px 0px 285px 0px;
 }
 
+.about {
+  margin: 120px 0px 215px 0px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.about__title {
+  color: #0f1d22;
+}
+
+.about__text {
+  color: #616161;
+  font-size: 17px;
+  padding: 0px 245px;
+  padding: 20px 245px 50px 245px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.about__photo-carousel {
+  width: 982px;
+  height: 360px;
+  background: #cecece;
+}
+
+.about__chef {
+  display: flex;
+  margin-top: 70px;
+}
+
+.about__chef-discription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.about__chef-text {
+  color: #616161;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
 .footer {
+  z-index: 0;
+  position: relative;
   background: #0f1d22;
   min-height: 500px;
+}
+
+.footer__frezka {
+  width: 100%;
+  height: 111px;
+  position: absolute;
+  top: -31px;
+  left: 0;
+  background: URL("../img/g-19_3_min.png") repeat-x center top;
+  background-size: 111px 57px;
 }
 
 .footer__row {
