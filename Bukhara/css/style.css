@@ -393,15 +393,14 @@ body._lock {
 }
 
 .open-menu__welcome {
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
   max-width: 100%;
-  background-image: url(../img/main_page/top_bg.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
+  background: URL("../img/main_page/top_bg.jpg") no-repeat center top rgba(0, 0, 0, 0.5);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -649,7 +648,7 @@ body._lock {
   }
 }
 @supports (-webkit-appearance:none){
-.open-menu__welcome{background-image:url(../img/main_page/top_bg.webp)}
+
 }
 
  @media (min-width: 992px){

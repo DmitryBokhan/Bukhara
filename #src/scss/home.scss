@@ -1,15 +1,17 @@
 .open-menu {
    &__welcome {
+      z-index: 5;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       overflow: hidden;
       max-width: 100%; //1920px
-      background-image: url(../img/main_page/top_bg.jpg);
-      background-position: center top;
-      background-repeat: no-repeat;
+      background: URL("../img/main_page/top_bg.jpg") no-repeat center top rgba(0, 0, 0, 0.5);
       background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
    }
    &__title {
