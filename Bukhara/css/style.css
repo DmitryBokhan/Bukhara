@@ -539,6 +539,10 @@ body._lock {
   margin-left: 10px;
 }
 
+.best-food {
+  background: #0f1d22;
+}
+
 .footer {
   z-index: 0;
   position: relative;
