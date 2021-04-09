@@ -242,13 +242,13 @@ body._lock {
 }
 
 .header {
-  z-index: 201;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
 .header__content {
+  z-index: 201;
   margin-top: 15px;
   padding: 0px 15px 0px 15px;
   width: 100%;
@@ -323,7 +323,7 @@ body._lock {
 }
 
 .header_fixed {
-  z-index: 0;
+  z-index: 100;
   position: fixed;
   width: 100%;
   height: 93px;
@@ -508,15 +508,15 @@ body._lock {
 .about__text {
   color: #616161;
   font-size: 17px;
-  padding: 0px 245px;
-  padding: 20px 245px 50px 245px;
   text-align: center;
   line-height: 1.8;
 }
 
 .about__photo-carousel {
-  width: 982px;
-  height: 360px;
+  width: 100px;
+  height: 100px;
+  max-width: 982px;
+  max-height: 360px;
   background: #cecece;
 }
 
@@ -541,6 +541,35 @@ body._lock {
 
 .best-food {
   background: #0f1d22;
+  overflow: hidden;
+}
+
+.best-food__content {
+  flex: 0 0 100%;
+  display: flex;
+}
+
+.best-food__container {
+  max-width: 1134px;
+  margin: 0 auto;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.best-food__body {
+  margin: 150px 0px 150px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.best-food__text {
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.best-food__image img {
+  z-index: -1;
+  max-width: 100%;
 }
 
 .footer {
@@ -689,6 +718,38 @@ body._lock {
   left: 0;
 }
 
+@media (min-width: 767px) {
+  .best-food {
+    display: flex;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .best-food__body {
+    width: 50%;
+    margin: 150px 20px 150px 0px;
+    padding: 0px 12px 0px 0px;
+  }
+
+  .best-food__image {
+    padding: 0px 0px 44% 0px;
+    position: relative;
+    flex: 0 0 50%;
+    transform: translate(-100%, 0px);
+  }
+
+  .best-food__image img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 @media (min-width: 992px) {
   .btn:hover {
     background-color: #d15050;
@@ -785,6 +846,22 @@ body._lock {
   }
 }
 @supports (-webkit-appearance:none){
+
+}
+
+ @media (min-width: 767px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 767.98px){
+
+@supports (-webkit-appearance:none){
+
+}
 
 }
 
