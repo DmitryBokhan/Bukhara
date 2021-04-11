@@ -1,0 +1,177 @@
+.image-slider__container {
+   position: relative;
+   display: flex;
+   width: 982px;
+   height: 364px;
+   @media (max-width: 1065px) {
+      width: 826px;
+      height: 306px;
+   }
+   @media (max-width: 905px) {
+      width: 479px;
+      height: 364px;
+   }
+   @media (max-width: 555px) {
+      width: 405px;
+      height: 315px;
+   }
+   @media (max-width: 480px) {
+      width: 250px;
+      height: 200px;
+   }
+}
+.image-slider {
+}
+
+.image-slider_image {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+
+.image-slider_image img {
+   //max-width: 480px;
+   //max-height: 365px;
+}
+
+// Задаем силь стрелкам
+.image-slider__container .swiper-button-next::after {
+   position: absolute;
+   left: 50px;
+   color: #f0c640;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.image-slider__container .swiper-button-prev::after {
+   position: absolute;
+   right: 50px;
+   color: #f0c640;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+/*Пагинация*/
+/*.image-slider .swiper-pagination {
+	bottom: 20px;
+}*/
+
+/*Буллеты*/
+/*.image-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #ffffff;
+}*/
+
+/*Фравкция*/
+/*.image-slider .swiper-pagination-fraction {
+	font-size: 18px;
+	color: #ffffff;
+}*/
+
+/*Прогрессбар*/
+/*.image-slider .swiper-pagination-progressbar-fill {
+	background-color: #1be65f;
+}*/
+
+/*Скролл*/
+/*.image-slider .swiper-scrollbar-drag {
+	cursor: pointer;
+	background-color: #e2e2e2;
+}*/
+
+/*Автоширина*/
+/*.image-slider .swiper-slide {
+	width: auto;
+}*/
+
+/*Мультирядность*/
+//активируем при значении параметра slidesPerColumn  равным 2 и более,
+//также неообходимо будет отключить патоширину (см. выше)
+// .image-slider {
+// 	height: 400px;
+// }
+// .image-slider .swiper-slide {
+// 	height: calc((100%-30px) / 2);
+// 	overflow: hidden;
+// }
+
+/*Вертикальный слайдер (параметры активирывать только при вертикальной прокрутку слайда)*/
+// .image-slider {
+// 		padding: 0px 0 0px 0;
+// 		height: 100vh;
+// }
+
+/*Эффект куб*/
+// .image-slider {
+// 	width: 800px;
+// }
+
+.photo__container {
+   z-index: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   //width: 100%;
+   //height: 100%;
+   width: 480px;
+   height: 365px;
+   //flex: 1 1 100%;
+   background: URL("../img/main_page/slider_photo/frezka_squear.png") repeat center center rgba(22, 54, 35, 0);
+   //background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: 98px 91px;
+   @media (max-width: 1065px) {
+      width: 403px;
+      height: 306px;
+      background-size: 81px 77px;
+   }
+   @media (max-width: 905px) {
+      width: 480px;
+      height: 365px;
+      background-size: 98px 91px;
+   }
+   @media (max-width: 555px) {
+      width: 403px;
+      height: 306px;
+      background-size: 81px 77px;
+   }
+   @media (max-width: 480px) {
+      width: 280px;
+      height: 223px;
+      background-size: 50px 45px;
+   }
+   img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 21px;
+      left: 21px;
+      object-fit: cover;
+      max-width: 432px;
+      max-height: 315px;
+      @media (max-width: 1065px) {
+         max-width: 363px;
+         max-height: 265px;
+      }
+      @media (max-width: 905px) {
+         max-width: 432px;
+         max-height: 315px;
+      }
+      @media (max-width: 555px) {
+         max-width: 363px;
+         max-height: 265px;
+      }
+      @media (max-width: 480px) {
+         max-width: 220px;
+         max-height: 173px;
+         top: 13px;
+         left: 13px;
+      }
+   }
+}

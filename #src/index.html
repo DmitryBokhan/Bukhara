@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>ГЛАВНАЯ</title>
 </head>
@@ -31,6 +32,7 @@
 					встреч, знаменательных событий, корпоративных вечеринок и для переговоров с деловыми партнерами.
 				</p>
 				<div class="about__photo-carousel">
+					@@include('_about_slider.html')
 				</div>
 				<div class="about__chef">
 					<div class="about__chef-foto">
@@ -48,18 +50,28 @@
 				<div class="best-food__container">
 					<div class="best-food__body">
 						<h2 class="best-food__title title">Лучшие блюда наших поваров</h2>
+						<div class="best-food__image-min">
+							<div class="best-food__image-min-item">
+								<img src="../img/main_page/best-food.jpg" alt="Лучшее блюдо">
+							</div>
+						</div>
+						<p class="best-food__name">Уч панжа.</p>
 						<div class="best-food__text text">Узбекский шашлык «Три пальца»!
 							Традиционно готовится на открытом огне на трёх шампурах из баранины с курдючным жиром.</div>
+						<p class="best-food__chef-name">Батыр Арсенов</p>
+						<p class="best-food__chef">Повар</p>
+						<button class="best-food__button button_xl">ОТКРЫТЬ МЕНЮ</button>
 					</div>
 				</div>
 			</div>
 			<div class="best-food__image">
-				<img src="../img/main_page/best_food.jpg" alt="Лучшее блюдо">
+				<img src="../img/main_page/best-food.jpg" alt="Лучшее блюдо">
 			</div>
 		</section>
 
 	</main>
 	@@include('_footer.html')
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src='js/script.js'></script>
 </body>
 

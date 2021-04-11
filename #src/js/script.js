@@ -1,4 +1,5 @@
-//@@include('alert.js')
+//подключаем свайпер для раздкла ABOUT
+@@include('about-swiper.js');
 
 //Анимация подложки верхнего меню (при скролле)
 window.onscroll = function showHeader() {
