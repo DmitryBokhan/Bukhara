@@ -30,10 +30,16 @@
          position: absolute;
          width: 100%;
          min-height: 790px;
-         @media (min-width: $md2+px) {
+         @media (max-width: $md1+px) {
             min-height: 615px;
          }
-         @media (min-width: $md3+px) {
+         @media (max-width: $md2+px) {
+            min-height: 615px;
+         }
+         @media (max-width: $md3+px) {
+            min-height: 532px;
+         }
+         @media (max-width: $md4+px) {
             min-height: 532px;
          }
          height: auto;
@@ -45,7 +51,21 @@
 
    &__title {
       text-align: center;
-      margin-top: 200px;
+      margin-top: 300px;
+      @media (max-width: $md1+px) {
+         margin-top: 250px;
+      }
+      @media (max-width: $md2+px) {
+         margin-top: 250px;
+      }
+      @media (max-width: $md3+px) {
+         font-size: 48px;
+         margin-top: 205px;
+      }
+      @media (max-width: $md4+px) {
+         font-size: 48px;
+         margin-top: 205px;
+      }
    }
 
    &__text {
