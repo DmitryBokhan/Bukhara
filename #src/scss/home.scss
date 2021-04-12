@@ -1,19 +1,48 @@
 .open-menu {
+   height: 790px;
+   overflow: hidden;
+   // &__welcome {
+   //    z-index: 0;
+   //    display: flex;
+   //    justify-content: center;
+   //    align-items: center;
+   //    flex-direction: column;
+   //    max-width: 100%; //1920px
+   //    max-height: 532px;
+   //    // height: auto;
+   //    // width: auto;
+   //    background: URL("../img/main_page/top_bg.jpg") no-repeat center top rgba(0, 0, 0, 0.5);
+   //    background-attachment: fixed;
+   //    -webkit-background-size: cover;
+   //    -moz-background-size: cover;
+   //    -o-background-size: cover;
+   //    background-size: cover;
+   // }
+   position: relative;
    &__welcome {
-      z-index: 5;
+      z-index: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      overflow: hidden;
-      max-width: 100%; //1920px
-      background: URL("../img/main_page/top_bg.jpg") no-repeat center top rgba(0, 0, 0, 0.5);
-      background-attachment: fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      img {
+         z-index: -1;
+         position: absolute;
+         width: 100%;
+         min-height: 790px;
+         @media (min-width: $md2+px) {
+            min-height: 615px;
+         }
+         @media (min-width: $md3+px) {
+            min-height: 532px;
+         }
+         height: auto;
+         top: 0;
+         left: 0;
+         object-fit: cover;
+      }
    }
+
    &__title {
       text-align: center;
       margin-top: 200px;

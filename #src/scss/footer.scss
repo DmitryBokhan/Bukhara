@@ -43,6 +43,9 @@
       justify-content: flex-start;
       align-items: flex-start;
       margin: 80px 0px 0px 20px;
+      @media (max-width: $md4+px) {
+         margin: 80px 0px 0px 0px;
+      }
    }
 
    &__menu-list {
@@ -63,6 +66,9 @@
    }
    &__info-content {
       margin: 80px 0px 0px 60px;
+      @media (max-width: $md4+px) {
+         margin: 80px 0px 0px 10px;
+      }
    }
 
    &__instagram {
@@ -78,7 +84,7 @@
    &__instagram-content {
       margin: 80px 0px 0px 18px;
       @media (max-width: 576px) {
-         margin: 80px 0px 50px 18px;
+         margin: 60px 0px 50px 0px;
       }
    }
 
@@ -98,9 +104,15 @@
    &__copyright-text {
       font-family: Open Sans;
       font-size: 12px;
+      @media (max-width: $md4+px) {
+         font-size: 11px;
+      }
       color: #e9e8e8;
       & span {
          font-size: 13px;
+         @media (max-width: $md4+px) {
+            font-size: 12px;
+         }
       }
    }
 }
@@ -110,17 +122,24 @@
       margin-top: 5px;
       font-family: Open Sans;
       font-size: 15px;
+      @media (max-width: $md4+px) {
+         font-size: 14px;
+      }
       line-height: 1.5;
       color: #e9e8e8;
       max-width: 250px;
    }
 
    &__phone {
+      display: block;
       margin-top: 15px;
       font-family: Open Sans;
       font-size: 15px;
       line-height: 1.8;
       color: #e9e8e8;
+      @media (max-width: $md4+px) {
+         font-size: 14px;
+      }
    }
 
    &__addres {
@@ -129,6 +148,11 @@
       font-size: 15px;
       line-height: 1.8;
       color: #e9e8e8;
+      @media (max-width: $md4+px) {
+         margin-top: 15px;
+         font-size: 14px;
+         line-height: 1.8;
+      }
    }
 }
 .instagram {
@@ -138,6 +162,9 @@
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap;
+      @media (max-width: $md4+px) {
+         justify-content: center;
+      }
    }
    &__box-row {
       display: flex;
@@ -147,6 +174,9 @@
 
    &__photo {
       margin-right: 18px;
+      @media (max-width: $md4+px) {
+         margin-right: 13px;
+      }
    }
 }
 
@@ -159,4 +189,14 @@
    color: #e9e8e8;
    top: -30px;
    left: 0;
+}
+.instagram__box:last-child div:nth-child(2) a:last-child img {
+   @media (max-width: $md4+px) {
+      margin-right: 0px;
+   }
+}
+.instagram__box:first-child div:nth-child(2) a:last-child img {
+   @media (max-width: $md4+px) {
+      margin-right: 0px;
+   }
 }
