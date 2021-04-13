@@ -1,5 +1,6 @@
 //подключаем свайпер для раздкла ABOUT
 @@include('about-swiper.js');
+@@include('burger-menu.js');
 
 //Анимация подложки верхнего меню (при скролле)
 window.onscroll = function showHeader() {

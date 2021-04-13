@@ -1,0 +1,150 @@
+body.lock {
+   overflow: hidden;
+}
+.popupjs {
+   z-index: 1000;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   top: 0;
+   left: 0;
+   opacity: 0; //скрываем попап
+   visibility: hidden; //скрываем попап
+   overflow-y: auto; //если в попапе много текста, его можно будет скролить по оси Y
+   overflow-x: hidden; // запрещаем скролл по оси X
+   transition: all 0.8s ease 0s; // добавляем анимации
+
+   &.open {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   &.open .popupjs__content {
+      //Анимация: вариант2
+      transform: translate(0px, 0px);
+      //Анимация: вариант2
+      //transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+      opacity: 1;
+   }
+
+   &__area {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
+
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+      height: 100%;
+   }
+
+   &__content {
+      display: flex;
+      background-color: #fff;
+      max-width: 879px;
+      //height: 100%;
+      min-height: 100%;
+      @media (max-width: 1200px) {
+         max-width: 423px;
+      }
+      @media (max-width: 600px) {
+         max-width: 250px;
+      }
+      // padding: 30px;
+      position: relative;
+      transition: all 0.8s ease 0s; // добавляем анимации
+      opacity: 0;
+      //Анимация: вариант1
+      //transform: translate(0px, -100%);
+      //Анимация: вариант2
+      //transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+
+      //Ваиант для меню
+      transform: translate(200%, 0px);
+      //transform: perspective(200px) translate(-200px, 0px) rotateY(45deg);
+   }
+   &__content_image {
+      padding: 0px;
+   }
+
+   //крестик для закрывания
+   &__close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+   }
+
+   &__title {
+      font-size: 40px;
+      margin: 0px 0px 1em 0px;
+   }
+
+   &__menu {
+      width: 879px;
+      max-height: 100%;
+   }
+}
+
+.main {
+   &__menu {
+      width: 100%;
+      padding: 30px 20px 0px 30px;
+      //border: red 2px solid;
+   }
+
+   &__menu-body {
+      img {
+         margin: 60px 0px 44px 0px;
+      }
+   }
+
+   &__menu-list {
+      li {
+         margin: 0px 0px 20px 0px;
+      }
+   }
+
+   &__uzor {
+      background: URL("../img/frezka_squear.png") repeat left top;
+      background-size: 98px 91px;
+      animation-duration: 1.5s;
+      width: 150%;
+      // min-height: 100%;
+      overflow: hidden;
+      //background-attachment: fixed;
+   }
+}
+.menu-burger__link {
+   font-family: Open Sans;
+   font-weight: 400;
+   font-size: 13px;
+   @media (max-width: $md4+px) {
+      font-size: 12px;
+      margin: 0px 9px;
+   }
+   line-height: 16px;
+   color: rgb(102, 102, 102);
+   padding: 0px 2.5px;
+   //margin: 0px 16.5px;
+   transition: color 0.3s ease 0s;
+   &:hover {
+      color: #f0c640;
+      position: relative;
+   }
+   &:hover::before {
+      content: "";
+      background: #f0c640;
+      transform: rotate(-45deg);
+      position: absolute;
+      width: 5.99px;
+      height: 5.99px;
+      left: -10px;
+      top: 6px;
+   }
+}
