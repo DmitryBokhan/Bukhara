@@ -213,6 +213,28 @@ body._lock {
   background-color: #f0c640;
 }
 
+.uzor-top::before {
+  content: "";
+  width: 100%;
+  height: 111px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: URL("../img/g-19_3_min.png") repeat-x center top;
+  background-size: 111px 57px;
+}
+
+.uzor-bottom::after {
+  content: "";
+  width: 100%;
+  height: 111px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: URL("../img/g-19_3_min-rev.png") repeat-x center bottom;
+  background-size: 111px 57px;
+}
+
 ._ibg {
   position: relative;
 }
@@ -566,17 +588,6 @@ body._lock {
   padding: 0.1px 0px;
 }
 
-.best-food::after {
-  content: "";
-  width: 100%;
-  height: 111px;
-  position: absolute;
-  bottom: 0;
-  left: 0px;
-  background: URL("../img/g-19_3_min-rev.png") repeat-x center bottom;
-  background-size: 111px 57px;
-}
-
 .best-food__content {
   max-height: 815px;
   flex: 0 0 100%;
@@ -676,30 +687,9 @@ body._lock {
 }
 
 .menu-presentation {
+  overflow: hidden;
   position: relative;
   padding: 0.1px 0px;
-}
-
-.menu-presentation::before {
-  content: "";
-  width: 100%;
-  height: 111px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: URL("../img/g-19_3_min.png") repeat-x center top;
-  background-size: 111px 57px;
-}
-
-.menu-presentation::after {
-  content: "";
-  width: 100%;
-  height: 111px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: URL("../img/g-19_3_min.png") repeat-x center bottom;
-  background-size: 111px 57px;
 }
 
 .menu-presentation__block {
@@ -866,6 +856,57 @@ body._lock {
 
 .menu-presentation__more-btn:hover {
   color: #f0c640;
+}
+
+.events {
+  overflow: hidden;
+  position: relative;
+  padding: 0.1px 0px;
+  background-color: #f0c640;
+}
+
+.events__block {
+  margin: 100px 0px;
+}
+
+.events__title {
+  color: #0f1d22;
+  text-align: center;
+}
+
+.events__body {
+  margin-top: 50px;
+}
+
+.events__row {
+  display: flex;
+}
+
+.events__description p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.88px;
+  color: #0f1d22;
+  margin: 0px 28px 35px 0px;
+}
+
+.events__photo {
+  flex: 0 0 auto;
+  height: 260px;
+  width: 357px;
+}
+
+.events__btn {
+  background-color: #0f1d22;
+  color: #fff;
+}
+
+.events__btn:hover {
+  background-color: #e9e8e8;
+  color: #0f1d22;
 }
 
 .image-slider__container {
@@ -1306,6 +1347,10 @@ body.lock {
     display: none;
   }
 
+  .open-menu {
+    height: 623px;
+  }
+
   .open-menu__welcome img {
     min-height: 615px;
   }
@@ -1317,6 +1362,27 @@ body.lock {
   .menu-presentation__row .menu-presentation__column:last-child {
     visibility: hidden;
     display: none;
+  }
+
+  .events__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .events__row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .events__description p {
+    text-align: center;
+    margin: 0px 0px 35px 0px;
+  }
+
+  .events__photo {
+    margin-bottom: 43px;
   }
 }
 
@@ -1562,6 +1628,10 @@ body.lock {
     margin: 0px 10px;
   }
 
+  .open-menu {
+    height: 523px;
+  }
+
   .open-menu__welcome img {
     min-height: 532px;
   }
@@ -1583,6 +1653,20 @@ body.lock {
   .best-food__text {
     font-size: 18px;
     text-align: center;
+  }
+
+  .menu-presentation__block {
+    font-size: 54px;
+    margin: 100px 0px;
+  }
+
+  .menu-presentation__category-title {
+    font-size: 54px;
+    text-align: center;
+  }
+
+  .events__title {
+    font-size: 54px;
   }
 
   .footer__menu-body {
