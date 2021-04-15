@@ -1,13 +1,13 @@
 @font-face {
-   font-family: "icons";
+   font-family: "icon";
    font-display: swap;
-   src: url("../fonts/icons.woff") format ("woff"), rl("../fonts/icons.woff2#icons") format ("woff2");
+   src: url("../fonts/icon.woff") format ("woff"), rl("../fonts/icon.woff2#icon") format ("woff2");
    font-weight: normal;
    font-style: normal;
    font-display: block;
 }
 %ic {
-   font-family: "icons";
+   font-family: "icon";
    font-style: normal;
    font-weight: normal;
    font-variant: normal;
@@ -39,3 +39,25 @@
 // ._icon-fb:before {
 //    content: "\e903";
 // }
+
+._icon-user:before {
+   content: "\e900";
+}
+._icon-cart:before {
+   content: "\e901";
+}
+._icon-burger:before {
+   content: "\e902";
+}
+._icon-arrow-next:before {
+   content: "\e903";
+}
+._icon-arrow-prev:before {
+   content: "\e904";
+}
+._icon-star-stroke:before {
+   content: "\e905";
+}
+._icon-star-fill:before {
+   content: "\e906";
+}

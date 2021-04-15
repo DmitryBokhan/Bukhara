@@ -88,6 +88,9 @@
 
    &__title {
       color: #0f1d22;
+      @media (max-width: $md4+px) {
+         font-size: 54px;
+      }
    }
 
    &__text {

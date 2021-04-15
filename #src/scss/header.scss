@@ -6,7 +6,7 @@
    &__content {
       z-index: 201;
       margin-top: 21px;
-      padding: 0px 15px 0px 15px;
+      // padding: 0px 15px 0px 15px;
       width: 100%;
       display: flex;
       position: fixed;
@@ -73,18 +73,36 @@
 
    &__cart {
       margin: 0px 15px;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s ease 0s;
+      &:hover {
+         color: #f6bb06;
+      }
       @media (max-width: $md4+px) {
          margin: 0px 10px;
       }
    }
    &__userlog {
       margin: 0px 15px;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s ease 0s;
+      &:hover {
+         color: #f6bb06;
+      }
       @media (max-width: $md4+px) {
          margin: 0px 10px;
       }
    }
    &__bar {
       margin: 0px 7px 0px 15px;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s ease 0s;
+      &:hover {
+         color: #f6bb06;
+      }
       @media (max-width: $md4+px) {
          margin: 0px 10px;
       }

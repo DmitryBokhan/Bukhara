@@ -35,3 +35,5 @@
    font-size: 40px;
    font-family: "Pehlevi", sans-serif;
 }
+//иконочные шрифты
+@include font("icon", "icon", "400", "normal");
