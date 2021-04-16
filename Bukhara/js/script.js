@@ -19,7 +19,7 @@ window.onscroll = function showHeader() {
    //    menu.classList.add('header_fixed_hidden');
    // }
 };
-const menuLinks = document.querySelectorAll('.burger-link'); //полкчаем все объекты у которых есть класс popup-link
+const menuLinks = document.querySelectorAll('.burger-link'); //получаем все объекты у которых есть класс popup-link
 const body = document.querySelector('body'); // получаем тег body, далее будем блокировать скролл у него
 const lockPadding = document.querySelectorAll('.lock-padding');//получаем все объекты у которых есть класс lock-padding, далле будем фиксировать эти объекты при появдении попапа, это необходимо для того, чтобы не было смещения при скрытии прокрутки у браузера
 //примечание
@@ -32,7 +32,7 @@ const timeout = 800; //время анимации
 if (menuLinks.length > 0) {
    for (let index = 0; index < menuLinks.length; index++) {
       const menuLink = menuLinks[index];
-      menuLink.addEventListener("click", function (e) { // вешаем событие при клике
+      menuLink.addEventListener("click", function (e) { // ловим событие при клике
          const menuName = menuLink.getAttribute('href').replace('#', ''); //получаем имя идентификатора без #
          const curentMenu = document.getElementById(menuName); // получаем сам объект по имени  
          menuOpen(curentMenu); //функция откроет наш попап
@@ -162,33 +162,12 @@ new Swiper('.image-slider', {
    // Буллеты, текущее положение,прогресбар
    pagination: {
       //el: '.swiper-pagination',
-
-
-      //буллеты
-      /*
-     clickable: true,
-     //динамические буллеты
-     dynamicBullets: true,
-     //кастомные буллеты (с цифрами)
-     renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-     },
-     */
-
-
       //Фракция (текущая страница слайдера из общего числа)
       type: 'fraction',
       // добовляем дополнительное описание (Фото * из *)
       renderFraction: function (currentClass, totalClass) {
          return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
       },
-
-
-
-      //Прогрессбар
-      /*
-      type: 'progressbar',
-      */
    },
 
    //Скролл
@@ -211,12 +190,6 @@ new Swiper('.image-slider', {
    //Переключение при клике на слайд
    slideToClickedSlide: true,
 
-   //Навигация по хешу
-   hashNavigation: {
-      //отслеживать состояние
-      watchState: true,
-   },
-
    //Управление клавиатурой
    keyboard: {
       //Включить\выключить
@@ -228,17 +201,8 @@ new Swiper('.image-slider', {
       //Включить\выключить
       //управлене клавишами
       //pageUp, pageDown
-      pageUpDown: true,
+      pageUpDown: false,
    },
-
-   //Управление колесом мыши
-   // mousewheel: {
-   //Чувствительность колеса
-   // sensitivity: 1,
-   //Класс оббъекта на котором
-   //будет срабатывать прокрутка мыши
-   //eventsTarget: ".image-slider",
-   // },
 
    //Автовысота
    autoHeight: false,
@@ -274,66 +238,9 @@ new Swiper('.image-slider', {
    //Свободный режим
    freeMode: false,
 
-   //Автопрокрутка
-   /* autoplay: {
-       //Пауза между прокруткой
-       delay: 2000,
-       //Закончить на послкднем слайде
-       stopOnLastSlide: true,
-       //Отключить после ручного переключения
-       disableOnInteraction: false,
-    },*/
-
 
    /*Скорость(плавность) переключения слайдов*/
    speed: 800,
-
-   /*Вертикальный слайдер (+ дополнительно настраиваем CSS - смотри в файл style.css)*/
-   //direction: 'vertical', //по умолчанию 'horizontal'
-
-   //---------------------------------------
-   /*Эффекты переключения слайдов */
-   //effect: 'slide', //по умолчанию всегда он
-
-
-   // effect: 'fade', // Эффект fade - смена прозрачности
-   //Дополнение к fade
-   //fadeEffect: {
-   //параллельная смена прозрачности
-   // crossFade: true,
-   // },
-
-   // effect: 'flip', //эффект Переворот
-   // flipEffect: {
-   //тень
-   //    slideShadows: false,
-   //Показ только активного слайда
-   //    limitRotatin: false,
-   // },
-
-
-   //    effect: 'cube', //эффект Куб
-   //    //Дополнение к cube
-   //    cubeEffect: {
-   //       //настройки тени
-   //       slideShadows: true,
-   //       shadow: true,
-   //       shadowOffset: 20,
-   //       shadowScale: 0.94,
-   //    },
-
-
-   //    effect: 'coverflow', //эввект Потока
-
-   //    coverflowEffect: {
-   //       //Угол
-   //       rotate: 20,
-   //       //Наложение
-   //       stretch: 50,
-   //       //Тень
-   //       slideShadows: true,
-   //    },
-   //------------------------------------
 
    //брейк поинты (адаприв)
    //ширина экрана
@@ -355,31 +262,15 @@ new Swiper('.image-slider', {
       },
    },
 
-
-   //брейк поинты (адаприв)
-   //соотношение сторон
-   /*breakpoints: {
-      '@0.75': {
-         slidesPerView: 1,
-      },
-      '@1.00': {
-         slidesPerView: 2,
-      },
-      '@1.50': {
-         slidesPerView: 3,
-      },
-   },
-   */
-
 });;
 //инициализация кастомной прокрутки в текстовых блоках карточек отзывов
 $('.custom-scroll').mCustomScrollbar({
    axis: 'y',              // вертикальный скролл 
    theme: 'dark-3',  // тема 
    scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах 
-   setHeight: '61',      // высота блока (переписывает CSS) 
+   setHeight: '68',      // высота блока (переписывает CSS) 
    mouseWheel: {
-      deltaFactor: 10    // кол-во пикселей на одну прокрутку колёсика мыши 
+      deltaFactor: 8    // кол-во пикселей на одну прокрутку колёсика мыши 
    }
 });
 (function ($) {
@@ -399,20 +290,6 @@ reviewsSwiper = new Swiper('.reviews-slider', {
    // Буллеты, текущее положение,прогресбар
    pagination: {
       //el: '.swiper-pagination',
-
-
-      //буллеты
-      /*
-     clickable: true,
-     //динамические буллеты
-     dynamicBullets: true,
-     //кастомные буллеты (с цифрами)
-     renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-     },
-     */
-
-
       //Фракция (текущая страница слайдера из общего числа)
       type: 'fraction',
       // добовляем дополнительное описание (Фото * из *)
@@ -420,20 +297,9 @@ reviewsSwiper = new Swiper('.reviews-slider', {
          return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
       },
 
-
-
-      //Прогрессбар
-
-      // type: 'progressbar',
-
    },
 
-   //Скролл
-   // scrollbar: {
-   //    // el: '.swiper-scrollbar',
-   //    //возможность перктаскивать скролл
-   //    // draggable: true
-   // },
+
 
    //включение/отключение 
    //перетаскивания на ПК
@@ -448,11 +314,7 @@ reviewsSwiper = new Swiper('.reviews-slider', {
    //Переключение при клике на слайд
    slideToClickedSlide: false,
 
-   //Навигация по хешу
-   // hashNavigation: {
-   //    //отслеживать состояние
-   //    watchState: false,
-   // },
+
 
    //Управление клавиатурой
    keyboard: {
@@ -468,14 +330,6 @@ reviewsSwiper = new Swiper('.reviews-slider', {
       pageUpDown: true,
    },
 
-   // Управление колесом мыши
-   // mousewheel: {
-   //    //Чувствительность колеса
-   //    sensitivity: 1,
-   //    //Класс оббъекта на котором
-   //    //будет срабатывать прокрутка мыши
-   //    eventsTarget: ".reviews-slider",
-   // },
 
    //Автовысота
    autoHeight: false,
@@ -511,66 +365,12 @@ reviewsSwiper = new Swiper('.reviews-slider', {
    //Свободный режим
    freeMode: false,
 
-   //Автопрокрутка
-   /* autoplay: {
-       //Пауза между прокруткой
-       delay: 2000,
-       //Закончить на послкднем слайде
-       stopOnLastSlide: true,
-       //Отключить после ручного переключения
-       disableOnInteraction: false,
-    },*/
+
 
 
    /*Скорость(плавность) переключения слайдов*/
    speed: 800,
 
-   /*Вертикальный слайдер (+ дополнительно настраиваем CSS - смотри в файл style.css)*/
-   //direction: 'vertical', //по умолчанию 'horizontal'
-
-   //---------------------------------------
-   /*Эффекты переключения слайдов */
-   //effect: 'slide', //по умолчанию всегда он
-
-
-   // effect: 'fade', // Эффект fade - смена прозрачности
-   //Дополнение к fade
-   //fadeEffect: {
-   //параллельная смена прозрачности
-   // crossFade: true,
-   // },
-
-   // effect: 'flip', //эффект Переворот
-   // flipEffect: {
-   //тень
-   //    slideShadows: false,
-   //Показ только активного слайда
-   //    limitRotatin: false,
-   // },
-
-
-   //    effect: 'cube', //эффект Куб
-   //    //Дополнение к cube
-   //    cubeEffect: {
-   //       //настройки тени
-   //       slideShadows: true,
-   //       shadow: true,
-   //       shadowOffset: 20,
-   //       shadowScale: 0.94,
-   //    },
-
-
-   //    effect: 'coverflow', //эввект Потока
-
-   //    coverflowEffect: {
-   //       //Угол
-   //       rotate: 20,
-   //       //Наложение
-   //       stretch: 50,
-   //       //Тень
-   //       slideShadows: true,
-   //    },
-   //------------------------------------
 
    //брейк поинты (адаприв)
    //ширина экрана

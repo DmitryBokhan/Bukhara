@@ -1007,67 +1007,33 @@ body._lock {
 
 .image-slider__container .swiper-button-next::after {
   position: absolute;
-  left: 50px;
-  color: #f0c640;
+  left: 0px;
+  color: #f0c74000;
   font-size: 30px;
   font-weight: 700;
+}
+
+.swiper-button-next {
+  position: absolute;
+  color: #f0c640;
+  font-size: 30px;
+  right: -35px;
 }
 
 .image-slider__container .swiper-button-prev::after {
   position: absolute;
-  right: 50px;
-  color: #f0c640;
+  right: 0px;
+  color: #f0c74000;
   font-size: 30px;
   font-weight: 700;
 }
 
-/*Пагинация*/
-
-/*.image-slider .swiper-pagination {
-	bottom: 20px;
-}*/
-
-/*Буллеты*/
-
-/*.image-slider .swiper-pagination-bullet {
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 14px;
-	background-color: #ffffff;
-}*/
-
-/*Фравкция*/
-
-/*.image-slider .swiper-pagination-fraction {
-	font-size: 18px;
-	color: #ffffff;
-}*/
-
-/*Прогрессбар*/
-
-/*.image-slider .swiper-pagination-progressbar-fill {
-	background-color: #1be65f;
-}*/
-
-/*Скролл*/
-
-/*.image-slider .swiper-scrollbar-drag {
-	cursor: pointer;
-	background-color: #e2e2e2;
-}*/
-
-/*Автоширина*/
-
-/*.image-slider .swiper-slide {
-	width: auto;
-}*/
-
-/*Мультирядность*/
-
-/*Вертикальный слайдер (параметры активирывать только при вертикальной прокрутку слайда)*/
-
-/*Эффект куб*/
+.swiper-button-prev {
+  position: absolute;
+  color: #f0c640;
+  font-size: 30px;
+  left: -35px;
+}
 
 .photo__container {
   z-index: 0;
@@ -1361,6 +1327,10 @@ body.lock {
   height: 5.99px;
   left: -10px;
   top: 6px;
+}
+
+.menu-burger__btn {
+  margin-bottom: 20px;
 }
 
 .mCustomScrollbar {
@@ -3307,8 +3277,9 @@ body.lock {
   }
 
   .menu__btn {
-    margin-right: 0px;
-    margin-left: 5px;
+    margin: 0 6px;
+    padding: 3px 6px;
+    font-size: 11px;
   }
 
   .menu__cart {
@@ -3337,11 +3308,15 @@ body.lock {
   }
 
   .about {
-    margin: 74px 0px 190px 0px;
+    margin: 74px 0px 100px 0px;
   }
 
   .about__title {
     font-size: 54px;
+  }
+
+  .about__chef-discription {
+    padding-left: 15px;
   }
 
   .best-food__title {
@@ -3365,7 +3340,12 @@ body.lock {
   }
 
   .events__title {
-    font-size: 54px;
+    font-size: 49px;
+  }
+
+  .events__photo {
+    height: 208px;
+    width: 285px;
   }
 
   .footer__menu-body {

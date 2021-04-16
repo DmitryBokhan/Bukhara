@@ -3,9 +3,9 @@ $('.custom-scroll').mCustomScrollbar({
    axis: 'y',              // вертикальный скролл 
    theme: 'dark-3',  // тема 
    scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах 
-   setHeight: '61',      // высота блока (переписывает CSS) 
+   setHeight: '68',      // высота блока (переписывает CSS) 
    mouseWheel: {
-      deltaFactor: 10    // кол-во пикселей на одну прокрутку колёсика мыши 
+      deltaFactor: 8    // кол-во пикселей на одну прокрутку колёсика мыши 
    }
 });
 (function ($) {
@@ -25,20 +25,6 @@ reviewsSwiper = new Swiper('.reviews-slider', {
    // Буллеты, текущее положение,прогресбар
    pagination: {
       //el: '.swiper-pagination',
-
-
-      //буллеты
-      /*
-     clickable: true,
-     //динамические буллеты
-     dynamicBullets: true,
-     //кастомные буллеты (с цифрами)
-     renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-     },
-     */
-
-
       //Фракция (текущая страница слайдера из общего числа)
       type: 'fraction',
       // добовляем дополнительное описание (Фото * из *)
@@ -46,20 +32,9 @@ reviewsSwiper = new Swiper('.reviews-slider', {
          return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>';
       },
 
-
-
-      //Прогрессбар
-
-      // type: 'progressbar',
-
    },
 
-   //Скролл
-   // scrollbar: {
-   //    // el: '.swiper-scrollbar',
-   //    //возможность перктаскивать скролл
-   //    // draggable: true
-   // },
+
 
    //включение/отключение 
    //перетаскивания на ПК
@@ -74,11 +49,7 @@ reviewsSwiper = new Swiper('.reviews-slider', {
    //Переключение при клике на слайд
    slideToClickedSlide: false,
 
-   //Навигация по хешу
-   // hashNavigation: {
-   //    //отслеживать состояние
-   //    watchState: false,
-   // },
+
 
    //Управление клавиатурой
    keyboard: {
@@ -94,14 +65,6 @@ reviewsSwiper = new Swiper('.reviews-slider', {
       pageUpDown: true,
    },
 
-   // Управление колесом мыши
-   // mousewheel: {
-   //    //Чувствительность колеса
-   //    sensitivity: 1,
-   //    //Класс оббъекта на котором
-   //    //будет срабатывать прокрутка мыши
-   //    eventsTarget: ".reviews-slider",
-   // },
 
    //Автовысота
    autoHeight: false,
@@ -137,66 +100,12 @@ reviewsSwiper = new Swiper('.reviews-slider', {
    //Свободный режим
    freeMode: false,
 
-   //Автопрокрутка
-   /* autoplay: {
-       //Пауза между прокруткой
-       delay: 2000,
-       //Закончить на послкднем слайде
-       stopOnLastSlide: true,
-       //Отключить после ручного переключения
-       disableOnInteraction: false,
-    },*/
+
 
 
    /*Скорость(плавность) переключения слайдов*/
    speed: 800,
 
-   /*Вертикальный слайдер (+ дополнительно настраиваем CSS - смотри в файл style.css)*/
-   //direction: 'vertical', //по умолчанию 'horizontal'
-
-   //---------------------------------------
-   /*Эффекты переключения слайдов */
-   //effect: 'slide', //по умолчанию всегда он
-
-
-   // effect: 'fade', // Эффект fade - смена прозрачности
-   //Дополнение к fade
-   //fadeEffect: {
-   //параллельная смена прозрачности
-   // crossFade: true,
-   // },
-
-   // effect: 'flip', //эффект Переворот
-   // flipEffect: {
-   //тень
-   //    slideShadows: false,
-   //Показ только активного слайда
-   //    limitRotatin: false,
-   // },
-
-
-   //    effect: 'cube', //эффект Куб
-   //    //Дополнение к cube
-   //    cubeEffect: {
-   //       //настройки тени
-   //       slideShadows: true,
-   //       shadow: true,
-   //       shadowOffset: 20,
-   //       shadowScale: 0.94,
-   //    },
-
-
-   //    effect: 'coverflow', //эввект Потока
-
-   //    coverflowEffect: {
-   //       //Угол
-   //       rotate: 20,
-   //       //Наложение
-   //       stretch: 50,
-   //       //Тень
-   //       slideShadows: true,
-   //    },
-   //------------------------------------
 
    //брейк поинты (адаприв)
    //ширина экрана

@@ -1,4 +1,4 @@
-const menuLinks = document.querySelectorAll('.burger-link'); //полкчаем все объекты у которых есть класс popup-link
+const menuLinks = document.querySelectorAll('.burger-link'); //получаем все объекты у которых есть класс popup-link
 const body = document.querySelector('body'); // получаем тег body, далее будем блокировать скролл у него
 const lockPadding = document.querySelectorAll('.lock-padding');//получаем все объекты у которых есть класс lock-padding, далле будем фиксировать эти объекты при появдении попапа, это необходимо для того, чтобы не было смещения при скрытии прокрутки у браузера
 //примечание
@@ -11,7 +11,7 @@ const timeout = 800; //время анимации
 if (menuLinks.length > 0) {
    for (let index = 0; index < menuLinks.length; index++) {
       const menuLink = menuLinks[index];
-      menuLink.addEventListener("click", function (e) { // вешаем событие при клике
+      menuLink.addEventListener("click", function (e) { // ловим событие при клике
          const menuName = menuLink.getAttribute('href').replace('#', ''); //получаем имя идентификатора без #
          const curentMenu = document.getElementById(menuName); // получаем сам объект по имени  
          menuOpen(curentMenu); //функция откроет наш попап

@@ -76,7 +76,7 @@
       margin: 74px 0px 215px 0px;
    }
    @media (max-width: $md4+px) {
-      margin: 74px 0px 190px 0px;
+      margin: 74px 0px 100px 0px;
    }
    &__content {
       display: flex;
@@ -124,6 +124,9 @@
       justify-content: space-around;
       align-items: flex-start;
       padding-left: 30px;
+      @media (max-width: $md4+px) {
+         padding-left: 15px;
+      }
    }
    &__chef-text {
       color: #616161;
@@ -517,7 +520,7 @@
       color: #0f1d22;
       text-align: center;
       @media (max-width: $md4+px) {
-         font-size: 54px;
+         font-size: 49px;
       }
    }
 
@@ -562,6 +565,10 @@
       width: 357px;
       @media (max-width: $md1+px) {
          margin-bottom: 43px;
+      }
+      @media (max-width: $md4+px) {
+         height: 208px;
+         width: 285px;
       }
    }
    &__btn {

@@ -35,81 +35,33 @@
    //max-height: 365px;
 }
 
-// Задаем силь стрелкам
+// Стрелки
 .image-slider__container .swiper-button-next::after {
    position: absolute;
-   left: 50px;
-   color: #f0c640;
+   left: 0px;
+   color: #f0c74000;
    font-size: 30px;
    font-weight: 700;
 }
-
+.swiper-button-next {
+   position: absolute;
+   color: #f0c640;
+   font-size: 30px;
+   right: -35px;
+}
 .image-slider__container .swiper-button-prev::after {
    position: absolute;
-   right: 50px;
-   color: #f0c640;
+   right: 0px;
+   color: #f0c74000;
    font-size: 30px;
    font-weight: 700;
 }
-
-/*Пагинация*/
-/*.image-slider .swiper-pagination {
-	bottom: 20px;
-}*/
-
-/*Буллеты*/
-/*.image-slider .swiper-pagination-bullet {
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 14px;
-	background-color: #ffffff;
-}*/
-
-/*Фравкция*/
-/*.image-slider .swiper-pagination-fraction {
-	font-size: 18px;
-	color: #ffffff;
-}*/
-
-/*Прогрессбар*/
-/*.image-slider .swiper-pagination-progressbar-fill {
-	background-color: #1be65f;
-}*/
-
-/*Скролл*/
-/*.image-slider .swiper-scrollbar-drag {
-	cursor: pointer;
-	background-color: #e2e2e2;
-}*/
-
-/*Автоширина*/
-/*.image-slider .swiper-slide {
-	width: auto;
-}*/
-
-/*Мультирядность*/
-//активируем при значении параметра slidesPerColumn  равным 2 и более,
-//также неообходимо будет отключить патоширину (см. выше)
-// .image-slider {
-// 	height: 400px;
-// }
-// .image-slider .swiper-slide {
-// 	height: calc((100%-30px) / 2);
-// 	overflow: hidden;
-// }
-
-/*Вертикальный слайдер (параметры активирывать только при вертикальной прокрутку слайда)*/
-// .image-slider {
-// 		padding: 0px 0 0px 0;
-// 		height: 100vh;
-// }
-
-/*Эффект куб*/
-// .image-slider {
-// 	width: 800px;
-// }
-
+.swiper-button-prev {
+   position: absolute;
+   color: #f0c640;
+   font-size: 30px;
+   left: -35px;
+}
 .photo__container {
    z-index: 0;
    display: flex;
