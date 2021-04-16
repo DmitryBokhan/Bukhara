@@ -1,18 +1,4 @@
-//инициализация кастомной прокрутки в текстовых блоках карточек отзывов
-$('.custom-scroll').mCustomScrollbar({
-   axis: 'y',              // вертикальный скролл 
-   theme: 'dark-3',  // тема 
-   scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах 
-   setHeight: '68',      // высота блока (переписывает CSS) 
-   mouseWheel: {
-      deltaFactor: 8    // кол-во пикселей на одну прокрутку колёсика мыши 
-   }
-});
-(function ($) {
-   $(window).on('load', function () {
-      $('.custom-scroll').mCustomScrollbar();
-   });
-})(jQuery);
+
 
 //инициализация слайдкра для отзывов
 reviewsSwiper = new Swiper('.reviews-slider', {
@@ -149,7 +135,22 @@ swiperPrev.addEventListener('click', () => {
    reviewsSwiper.slidePrev();
 })
 swiperNext.addEventListener('click', () => {
-   console.log('Hello');
-
    reviewsSwiper.slideNext();
 });
+
+
+//инициализация кастомной прокрутки в текстовых блоках карточек отзывов
+$('.custom-scroll').mCustomScrollbar({
+   axis: 'y',              // вертикальный скролл 
+   theme: 'dark-3',  // тема 
+   scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах 
+   setHeight: '70',      // высота блока (переписывает CSS) 
+   mouseWheel: {
+      deltaFactor: 8    // кол-во пикселей на одну прокрутку колёсика мыши 
+   }
+});
+(function ($) {
+   $(window).on('load', function () {
+      $('.custom-scroll').mCustomScrollbar();
+   });
+})(jQuery);
